@@ -8,7 +8,9 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
@@ -27,18 +29,28 @@ fun AllPuppies(
 
     val typography = MaterialTheme.typography
     val allPuppiesList: List<Puppy> by puppyViewModel.allPuppies.observeAsState(initial = emptyList())
-    LazyColumn(
-        contentPadding = PaddingValues(16.dp), state = lazyListState
-    ) {
-        item {
-            Text(text = "Find a best buddy", style = typography.h5)
-            Spacer(modifier = Modifier.height(16.dp))
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text("Overview")
+                },
+            )
+        },
+        content = {
+            LazyColumn(
+                contentPadding = PaddingValues(16.dp), state = lazyListState
+            ) {
+                item {
+                    Text(text = "Find a best buddy", style = typography.h5)
+                    Spacer(modifier = Modifier.height(16.dp))
+                }
+                itemsIndexed(items = allPuppiesList, itemContent = { index, item ->
+                    PuppyCard(item, selectPuppy)
+                    Spacer(modifier = Modifier.height(8.dp))
+                })
+            }
+
         }
-        itemsIndexed(items = allPuppiesList, itemContent = { index, item ->
-            PuppyCard(item, selectPuppy)
-            Spacer(modifier = Modifier.height(8.dp))
-        })
-    }
-
-
+    )
 }
