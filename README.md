@@ -1,4 +1,4 @@
-# Put title of your app here
+# Adopt A Puppy
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
@@ -12,7 +12,7 @@ screen for each puppy.
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+This App was written for the #AndroidDevChallenge - Jetpack Compose, Week 1
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
