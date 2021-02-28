@@ -7,13 +7,6 @@ import kotlinx.coroutines.flow.flow
 object PuppyRepo {
     private val puppies = listOf(
         Puppy(
-            1,
-            "Miranda",
-            Puppy.Sex.FEMALE,
-            "Miranda came to us after being severely neglected with another dog. They both were underweight and needed a lot of tlc to get back to the normal dogs they once were. Despite the difficult life she had, Miranda is still looking to trust humans once again and find his forever home with NO OTHER PETS OR CHILDREN! Miranda is a very special girl who is easily excited by: play, food, and toys, so she will need someone who knows how to keep her cool when she gets over the top with her excitement.",
-            R.drawable.bill_stephan_9lkqymzflre_unsplash
-        ),
-        Puppy(
             2,
             "Buddie",
             Puppy.Sex.MALE,
@@ -28,6 +21,13 @@ object PuppyRepo {
             R.drawable.hannah_grace_fk4timldff0_unsplash
         ),
         Puppy(4, "Trisha", Puppy.Sex.FEMALE, "", R.drawable.matthew_foulds_bn6uvogy5vm_unsplash),
+        Puppy(
+            1,
+            "Miranda",
+            Puppy.Sex.FEMALE,
+            "Miranda came to us after being severely neglected with another dog. They both were underweight and needed a lot of tlc to get back to the normal dogs they once were. Despite the difficult life she had, Miranda is still looking to trust humans once again and find his forever home with NO OTHER PETS OR CHILDREN! Miranda is a very special girl who is easily excited by: play, food, and toys, so she will need someone who knows how to keep her cool when she gets over the top with her excitement.",
+            R.drawable.bill_stephan_9lkqymzflre_unsplash
+        ),
         Puppy(5, "Tiny", Puppy.Sex.FEMALE, "", R.drawable.patrick_kool_06efqvjkib8_unsplash),
     )
 
