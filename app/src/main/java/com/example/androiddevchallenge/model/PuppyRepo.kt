@@ -10,14 +10,14 @@ object PuppyRepo {
             2,
             "Buddie",
             Puppy.Sex.MALE,
-            "Hi! My name is Buddie! I was originally surrendered to the shelter in 2017. They had little kids and I wasn't get a long with them. I was adopted shortly after but thought the cats were fun to chase and not be nice to. Unfortunately I have found myself back yet again. I know I can be a little bit of a stinker in the home, but I try real hard to be good. I really do need a home that is low key with no children or other animals. Someone that will take me for walks and spend all their time with me and me only. Could that be you?!",
+            "Hi! My name is Buddie! My first days in my life I spent in a family. They had little kids and I wasn't get a long with them. I was adopted shortly after but thought the cats were fun to chase and not be nice to. Unfortunately I have found myself back yet again. I know I can be a little bit of a stinker in the home, but I try real hard to be good. I really do need a home that is low key with no children or other animals. Someone that will take me for walks and spend all their time with me and me only. Could that be you?!",
             R.drawable.austin_kirk_qzenflkkwt0_unsplash
         ),
         Puppy(
             3,
             "Mike",
             Puppy.Sex.MALE,
-            "Hi! My name is Mike! I was originally surrendered to the shelter in 2017. They had little kids and I wasn't get a long with them. I was adopted shortly after but thought the cats were fun to chase and not be nice to. Unfortunately I have found myself back yet again. I know I can be a little bit of a stinker in the home, but I try real hard to be good. I really do need a home that is low key with no children or other animals. Someone that will take me for walks and spend all their time with me and me only. Could that be you?!",
+            "Hi! My name is Mike! My first days in my life I spent in a family. They had little kids and I wasn't get a long with them. They moved away and now I need a new family. I like other dogs and even cats.",
             R.drawable.hannah_grace_fk4timldff0_unsplash
         ),
         Puppy(4, "Trisha", Puppy.Sex.FEMALE, "", R.drawable.matthew_foulds_bn6uvogy5vm_unsplash),
