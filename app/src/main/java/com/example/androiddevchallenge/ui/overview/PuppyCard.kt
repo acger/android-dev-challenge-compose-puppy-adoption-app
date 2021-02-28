@@ -1,6 +1,7 @@
 package com.example.androiddevchallenge.ui.overview
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -18,13 +19,18 @@ import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.model.Puppy
 
 @Composable
-fun PuppyCard(puppy: Puppy) {
+fun PuppyCard(puppy: Puppy, selectPuppy: (Int) -> Unit) {
     val typography = MaterialTheme.typography
     Card(
         shape = RoundedCornerShape(4.dp),
         modifier = Modifier
             .fillMaxWidth()
-            .padding(4.dp),
+            .padding(4.dp)
+            .clickable(
+                onClick = {
+                    selectPuppy(puppy.id)
+                }
+            ),
     ) {
         Column(modifier = Modifier.fillMaxWidth()) {
             Image(

@@ -1,14 +1,12 @@
-package com.example.androiddevchallenge.viewmodel
+package com.example.androiddevchallenge.ui.overview
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
-import com.example.androiddevchallenge.model.Puppy
 import com.example.androiddevchallenge.model.PuppyRepo
-import kotlinx.coroutines.flow.Flow
 
-class OverviewViewModel(input: Flow<List<Puppy>>) : ViewModel() {
-    val allPuppies = input.asLiveData()
+class PuppyViewModel(input: PuppyRepo) : ViewModel() {
+    val allPuppies = input.findPuppies().asLiveData()
 
 }
 

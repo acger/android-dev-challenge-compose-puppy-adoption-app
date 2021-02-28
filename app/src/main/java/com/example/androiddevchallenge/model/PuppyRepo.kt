@@ -34,4 +34,8 @@ object PuppyRepo {
     fun findPuppies(): Flow<List<Puppy>> {
         return flow { emit(puppies) }
     }
+
+    fun findById(puppyId: Int): Puppy {
+        return puppies.first { it.id == puppyId }
+    }
 }
